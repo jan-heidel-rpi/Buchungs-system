@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+
+{% block body %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <link href="{{ asset('assets/calender/css/jquery-ui.css')}}" rel="stylesheet" />
+    <link href="{{ asset('assets/calender/css/jquery.ui.theme.css')}}" rel="stylesheet" />
+
+    <link href="{{ asset('assets/calender/css/timelineScheduler.css')}}" rel="stylesheet" />
+    <link href="{{ asset('assets/calender/css/timelineScheduler.styling.css')}}" rel="stylesheet" />
+    <link href="{{ asset('assets/calender/css/calendar.css')}}" rel="stylesheet" />
+
+    <script src="{{ asset('assets/calender/js/moment.min.js')}}"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <script src="{{ asset('assets/calender/js/jquery-ui-1.10.2.min.js')}}"></script>
+    <script src="{{ asset('assets/calender/js/timelineScheduler.js') }}"></script>
+    <script src="{{ asset('assets/calender/js/calendar.js') }}"></script>
+    <div class="calendar">
+
+    </div>
+    <div class="realtime-info">
+
+    </div>
+
+{% endblock %}
